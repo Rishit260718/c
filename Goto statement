@@ -1,0 +1,13 @@
+#include <stdio.h>
+void print_number() {
+    int n = 10;
+label:
+    printf("%d\n", n);
+    n--;
+    if (n >= 0)
+        goto label;
+}
+int main() {
+    print_number();
+    return 0;
+}

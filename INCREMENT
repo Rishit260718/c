@@ -1,0 +1,23 @@
+#include <stdio.h>
+void increment()
+{
+    static int i;
+    i++;
+    printf ("%d\t",i);
+    
+}
+int main ()
+{
+    increment();
+    increment();
+    increment();
+    increment();
+    increment();
+    increment();
+    increment();
+    increment();
+    increment();
+    increment();
+
+    return 0;
+}

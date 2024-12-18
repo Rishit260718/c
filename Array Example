@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int marks[5]; //array datatype and name for marks
+    int sum = 0;
+    float perc;
+    char name[50];
+
+    printf("Enter the name of the student: ");
+    scanf("%s", name);
+
+   
+    printf("Enter the marks for 5 subjects:\n");
+    for (int i = 0; i < 5; i++) {  //teling the array to take 5 inputs 
+        printf("Subject %d:\n ", i + 1); // telling the compiler to print subject1 and change the no. each time 
+        scanf("%d", &marks[i]);  //taking the marks 
+        sum += marks[i];
+    }
+    perc = (sum /5)*100; //tried to calculate 
+ 
+    printf("The sum of all the subjects = %d\n", sum);
+    printf("The percentage is = %.2f\n", perc);
+
+    if (perc >= 35) {
+        printf("%s has passed the mid-semester.\n", name);
+    } else {
+        printf("%s has failed the mid-semester.\n", name);
+    }  
+     //Above is the condition to check wether the student passed or not 
+    return 0;
+}

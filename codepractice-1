@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int a, b;
+    printf("Enter the numbers a and b: ");
+    scanf("%d%d", &a, &b);
+
+    printf("SUM of a and b = %d\n", a + b);
+    printf("DIFFERENCE of a and b = %d\n", a - b);
+    printf("PRODUCT of a and b = %d\n", a * b);
+    printf("DIVISION of a and b = %.2f\n", (float)b / a);
+    printf("PERCENTAGE of a and b = %.2f\n", (float)(a + b) / 2 * 100);
+    return 0;
+}

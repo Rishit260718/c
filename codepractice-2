@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#define PI 3.14  // makes the Pi a constant 
+
+int main() {
+int iV = 10;        
+float fV = 5.5; 
+// Implicit Type Conversion
+float result = iV + fV;
+printf("Adding int (%d) and float (%.2f): %.2f\n", iV, fV, result);
+// Explicit Type Conversion
+int explicitResult = (int)fV;
+printf("Converting float (%.2f) to int: %d\n", fV, explicitResult);
+float areaOfCircle = (float)iV * PI;  // Explicitly cast int to float
+printf("Calculating area of a circle with radius %d: %.2f\n", iV, areaOfCircle);
+return 0;
+}

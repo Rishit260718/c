@@ -1,0 +1,43 @@
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    if (num % 2 == 0) {
+        printf("%d is an even number.\n", num);
+    } else {
+        printf("%d is an odd number.\n", num);
+    }
+    switch (num) {
+        case 1:
+            printf("You entered: One\n");
+            break;
+        case 2:
+            printf("You entered: Two\n");
+            break;
+        case 3:
+            printf("You entered: Three\n");
+            break;
+        case 4:
+            printf("You entered: Four\n");
+            break;
+        case 5:
+            printf("You entered: Five\n");
+            break;
+        case 6:
+            printf("You entered: Six\n");
+            break;
+        case 7:
+            printf("You entered: Seven\n");
+            break;
+        case 8:
+            printf("You entered: Eight\n");
+            break;
+        case 9:
+            printf("You entered: Nine\n");
+            break;
+        default:
+            printf("Fuck you for entering '%d' because its a double digit number.\n", num);
+    }
+    return 0;
+}

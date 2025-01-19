@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int num, i, np; //np is for not prime
+    printf("Prime numbers between 1 and 100 are:\n");
+    for (num = 2; num <= 100; num++) {
+        np = 1;
+        for (i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                np = 0;
+                break;
+            }
+        }
+        if (!np) {
+            continue;
+        }
+        printf("%d \n", num);
+    }
+    return 0;
+}
